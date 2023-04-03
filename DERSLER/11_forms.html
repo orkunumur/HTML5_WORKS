@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div>
+      <head>
+        <h1>Form Nedir ?</h1>
+      </head>
+      <p>
+        HTML form, kullanıcının web sitesindeki verileri göndermesine ve
+        sunucuya aktarmasına izin veren bir araçtır. HTML formu, kullanıcının
+        veri girdiği bir sayfa veya bölümdür. Kullanıcılar, metin kutuları,
+        radyo düğmeleri, onay kutuları ve diğer öğeler gibi farklı giriş
+        alanlarına veri girerler ve formun "Gönder" düğmesini tıkladıklarında,
+        form verileri sunucuya gönderilir.
+      </p>
+      <p>
+        HTML form, kullanıcının web sitesindeki verileri göndermesine ve
+        sunucuya aktarmasına izin veren bir araçtır. HTML formu, kullanıcının
+        veri girdiği bir sayfa veya bölümdür. Kullanıcılar, metin kutuları,
+        radyo düğmeleri, onay kutuları ve diğer öğeler gibi farklı giriş
+        alanlarına veri girerler ve formun "Gönder" düğmesini tıkladıklarında,
+        form verileri sunucuya gönderilir.
+      </p>
+      <p>
+        Form etiketleri, genellikle bir form etiketiyle başlar ve method ve
+        action özellikleri belirtilerek tamamlanır. method özelliği, verilerin
+        sunucuya nasıl gönderileceğini (GET veya POST) belirtirken, action
+        özelliği verilerin gönderileceği sunucu dosyasının yolunu belirtir.
+      </p>
+      <p>
+        Form etiketleri, genellikle bir form etiketiyle başlar ve method ve
+        action özellikleri belirtilerek tamamlanır. method özelliği, verilerin
+        sunucuya nasıl gönderileceğini (GET veya POST) belirtirken, action
+        özelliği verilerin gönderileceği sunucu dosyasının yolunu belirtir.
+      </p>
+      <p>
+        Ayrıca, form etiketleri arasında farklı giriş alanları ve özellikleri
+        belirleyen etiketler de bulunur. Örneğin, input etiketi, kullanıcı
+        tarafından girilen metni almak için kullanılırken, select etiketi, bir
+        açılır menü oluşturmak için kullanılır. Button etiketi, kullanıcıların
+        formu göndermeden önce tıklaması gereken bir düğme oluşturmak için
+        kullanılabilir.
+      </p>
+
+      <img src="IMG/form.png" alt="form" />
+    </div>
+    <hr />
+    <div>
+      <h3>Örnek Form</h3>
+    </div>
+    <hr />
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="surname">Soyad</label>
+        <input type="text" id="surname" />
+      </div>
+      <br />
+      <div>
+        <label for="parola">Parola</label>
+        <input type="password" id="parola" />
+      </div>
+      <br />
+      <div>
+        <label for="intro">Kendini Anlat</label>
+        <textarea id="intro" cols="30"></textarea>
+      </div>
+      <br />
+      <div>
+        <p>En sevdiğin programlama dili:</p>
+        <input type="radio" id="html" name="programlama" />
+        <label for="html">HTML</label>
+
+        <input type="radio" id="css" name="programlama" />
+        <label for="css">CSS</label>
+
+        <input type="radio" id="javascript" name="programlama" />
+        <label for="javascript">Javascript</label>
+      </div>
+
+      <div>
+        <p>En sevdiğin programlama dili:</p>
+        <input type="checkbox" id="html2" />
+        <label for="html2">HTML</label>
+
+        <input type="checkbox" id="css2" />
+        <label for="css2">CSS</label>
+
+        <input type="checkbox" id="javascript2" />
+        <label for="javascript2">Javascript</label>
+      </div>
+      <br />
+      <div>
+        <label for="cities">Şehir</label>
+        <select id="cities">
+          <option value="41">Kocaeli</option>
+          <option value="34">İstanbul</option>
+          <option value="35">İzmir</option>
+          <option value="06">Ankara</option>
+          <option value="01">Adana</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="eposta">Email</label>
+        <input type="email" id="eposta" />
+      </div>
+      <br />
+      <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+      <br />
+      <button type="submit">Kaydet</button>
+      <button type="reset">Temizle</button>
+    </form>
+  </body>
+</html>
