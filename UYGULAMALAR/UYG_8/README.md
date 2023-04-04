@@ -1,2 +1,2 @@
-# CSS-Odev-2
-CSS odev 2
+# HTML - CSS Odevi 2
+
